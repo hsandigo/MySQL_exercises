@@ -12,3 +12,8 @@ create table albums (
   sales_in_millions DECIMAL(8, 2) NOT NULL,
   PRIMARY KEY (id)
 );
+
+
+select artist, genre from albums;
+
+SELECT * from albums WHERE sales_in_millions > 20;
