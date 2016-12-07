@@ -1,7 +1,7 @@
 use codeup_test_db;
-# drop TABLE albums;
-show DATABASES;
-show tables;
+drop TABLE albums;
+# show DATABASES;
+# show tables;
 
 create table albums (
   id                INT UNSIGNED  NOT NULL AUTO_INCREMENT,
@@ -9,7 +9,7 @@ create table albums (
   album             VARCHAR(100)  NOT NULL,
   genre             VARCHAR(100),
   release_date      YEAR,
-  sales_in_millions DECIMAL(8, 2) NOT NULL,
+  sales_in_millions DECIMAL(18, 2) NOT NULL,
   PRIMARY KEY (id)
 );
 
