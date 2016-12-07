@@ -1,1 +1,2 @@
-select albums
+use codeup_test_db;
+

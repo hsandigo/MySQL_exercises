@@ -22,7 +22,7 @@ SELECT
 FROM albums
 WHERE sales_in_millions < 20;
 
-SELECT alabum AS "All the albums in the rock genre"
+SELECT album AS "All the albums in the rock genre"
 FROM albums
 WHERE genre LIKE "%Rock%";
 

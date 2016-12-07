@@ -1,6 +1,6 @@
-use codeup_test_db;
+use truncate codeup_test_db;
 
-TRUNCATE albums;
+# TRUNCATE albums;
 
 insert into albums (artist, album, genre, release_date, sales_in_millions)
 VALUES
@@ -35,3 +35,4 @@ VALUES
   ('Pink Floyd', 'The Wall', 'Progressive Rock', 1979, 17.60),
   ('Santana', 'Supernatural', 'Rock', 1999, 20.50),
   ('Guns N Roses', 'Appetite for Destruction', 'Heavy Metal, Hard Rock', 1987, 21.30);
+
