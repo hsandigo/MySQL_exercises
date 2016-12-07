@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="codeup_test_db">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sys"/>
+    <table id="6" parent="1" name="albums"/>
+    <column id="7" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="8" parent="6" name="artist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="9" parent="6" name="album">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="10" parent="6" name="genre">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="11" parent="6" name="release_date">
+      <data-type>year(4)|0</data-type>
+    </column>
+    <column id="12" parent="6" name="sales_in_millions">
+      <mandatory>1</mandatory>
+      <data-type>decimal(8,2)|0</data-type>
+    </column>
+    <key id="13" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
