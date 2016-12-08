@@ -1,4 +1,4 @@
-USE employees;
+use employees;
 
 # SELECT *
 # FROM albums;
@@ -15,13 +15,13 @@ SELECT
   first_name,
   last_name
 FROM employees
-WHERE (first_name = "Irena" OR first_name = "Vidya" OR first_name = "Maya") AND gender = "M";
+WHERE (first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya') AND gender = 'M'
+ORDER BY first_name;
 
 
 SELECT last_name
 FROM employees
-WHERE last_name LIKE ('E%')
-order by emp_no DESC;
+WHERE last_name LIKE ('E%');
 
 SELECT first_name
 FROM employees
