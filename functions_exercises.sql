@@ -30,6 +30,12 @@ WHERE last_name LIKE '%q'
 GROUP BY first_name, last_name;
 
 
-SELECT last_name
+SELECT
+  count(*) AS 'repeats',
+  first_name,
+  last_name
 FROM employees
-WHERE last_name LIKE ('%q%');
+WHERE last_name LIKE '%q%'
+      AND last_name NOT LIKE '%qu%'
+GROUP BY first_name, last_name
+ORDER BY repeats DESC;
