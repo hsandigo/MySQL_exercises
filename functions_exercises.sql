@@ -38,4 +38,11 @@ FROM employees
 WHERE last_name LIKE '%q%'
       AND last_name NOT LIKE '%qu%'
 GROUP BY first_name, last_name
-ORDER BY repeats DESC;
+ORDER BY repeats DESC, first_name ASC, last_name DESC;
+
+SELECT
+  e.*,
+  s.*
+FROM employees AS e, salaries AS s
+WHERE e.first_name
+      LIKE '%qu%';
